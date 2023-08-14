@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "prepare": "nitropack prepare",
+    "dev": "nitropack dev",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "nitropack": "latest",
+    "ofetch": "^1.1.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.40.2",
+    "eslint": "^8.47.0",
+    "wrangler": "^3.5.0"
+  }
+}

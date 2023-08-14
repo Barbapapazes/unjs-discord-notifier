@@ -1,0 +1,13 @@
+name = "unjs-discord-notifier"
+compatibility_date = "2023-08-07"
+
+kv_namespaces = [
+  { binding = "cache", preview_id = "4a692e51febc4bfc8192fe376d3ec658", id = "b3bbe192329441ad80e5c1cc4c1c4ed2" }
+]
+
+[triggers]
+# Every minute (for testing) but not viable https://developers.cloudflare.com/workers/platform/pricing/#workers-kv due to limits
+crons = ["* * * * *"]
+
+[build]
+command = "npm run build"
